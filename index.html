@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>5 nouvelles propriétés CSS</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+	</head>
+		<body>
+			<!-- Chatbox -->
+			<div class='titre'>
+				<p>Tuto: mise en page CSS avec fil d'actu et une fenêtre de chat.</p>
+			</div>
+			<div class='chat'>
+				<div class="messages">
+					<ul id="messages">
+						<li><div class="message">Message 1</div></li>
+						<li><div class="message">Message 2</div></li>
+						<li><div class="message">Message 3</div></li>
+						<li><div class="message">Message 4</div></li>
+						<li><div class="message">Message 5</div></li>
+						<li><div class="message">Message 6</div></li>
+						<li><div class="message">Message 7</div></li>
+						<li><div class="message">Message 8</div></li>
+						<li><div class="message">Message 9</div></li>
+						<li><div class="message">Message 10</div></li>
+					</ul>
+				</div>
+					<input type="text" id="input" class='input'placeholder="Tapez votre message ici" required>
+					<div class='prompt'>Appuyez sur Entrée pour envoyer le message</div>
+
+			</div>
+
+			<!-- Fil d'actu -->
+			<div class='container'>
+				<ul class='feed'>
+					<li><div class='card'><h2>carte 1</h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis metus mollis urna consequat finibus. Nullam maximus tortor lectus, eget vehicula nisl varius quis. Vivamus ut nisi libero. Curabitur nulla odio, fringilla vitae lectus eleifend, tempus consectetur urna. Maecenas laoreet libero quis risus consectetur pretium. Phasellus tempor justo augue, nec tristique ante sollicitudin at. Aliquam dignissim diam nec erat cursus aliquet. Sed quis lorem non velit tristique dignissim. Nam sit amet leo interdum, dignissim orci nec, pellentesque justo. Vestibulum sed auctor mauris, at euismod lacus. Aenean maximus lobortis erat, id accumsan tellus pharetra sed.</div></li>
+					<li><div class='card'><h2>carte 2</h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis metus mollis urna consequat finibus. Nullam maximus tortor lectus, eget vehicula nisl varius quis. Vivamus ut nisi libero. Curabitur nulla odio, fringilla vitae lectus eleifend, tempus consectetur urna. Maecenas laoreet libero quis risus consectetur pretium. Phasellus tempor justo augue, nec tristique ante sollicitudin at. Aliquam dignissim diam nec erat cursus aliquet. Sed quis lorem non velit tristique dignissim. Nam sit amet leo interdum, dignissim orci nec, pellentesque justo. Vestibulum sed auctor mauris, at euismod lacus. Aenean maximus lobortis erat, id accumsan tellus pharetra sed.</div></li>
+					<li><div class='card'><h2>carte 3</h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis metus mollis urna consequat finibus. Nullam maximus tortor lectus, eget vehicula nisl varius quis. Vivamus ut nisi libero. Curabitur nulla odio, fringilla vitae lectus eleifend, tempus consectetur urna. Maecenas laoreet libero quis risus consectetur pretium. Phasellus tempor justo augue, nec tristique ante sollicitudin at. Aliquam dignissim diam nec erat cursus aliquet. Sed quis lorem non velit tristique dignissim. Nam sit amet leo interdum, dignissim orci nec, pellentesque justo. Vestibulum sed auctor mauris, at euismod lacus. Aenean maximus lobortis erat, id accumsan tellus pharetra sed.</div></li>
+					<li><div class='card'><h2>carte 4</h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis metus mollis urna consequat finibus. Nullam maximus tortor lectus, eget vehicula nisl varius quis. Vivamus ut nisi libero. Curabitur nulla odio, fringilla vitae lectus eleifend, tempus consectetur urna. Maecenas laoreet libero quis risus consectetur pretium. Phasellus tempor justo augue, nec tristique ante sollicitudin at. Aliquam dignissim diam nec erat cursus aliquet. Sed quis lorem non velit tristique dignissim. Nam sit amet leo interdum, dignissim orci nec, pellentesque justo. Vestibulum sed auctor mauris, at euismod lacus. Aenean maximus lobortis erat, id accumsan tellus pharetra sed.</div></li>
+					<li><div class='card'><h2>carte 5</h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis metus mollis urna consequat finibus. Nullam maximus tortor lectus, eget vehicula nisl varius quis. Vivamus ut nisi libero. Curabitur nulla odio, fringilla vitae lectus eleifend, tempus consectetur urna. Maecenas laoreet libero quis risus consectetur pretium. Phasellus tempor justo augue, nec tristique ante sollicitudin at. Aliquam dignissim diam nec erat cursus aliquet. Sed quis lorem non velit tristique dignissim. Nam sit amet leo interdum, dignissim orci nec, pellentesque justo. Vestibulum sed auctor mauris, at euismod lacus. Aenean maximus lobortis erat, id accumsan tellus pharetra sed.</div></li>
+					<li class='nested'>
+						<ul>
+							<li><div class='card'><h2>carte A</h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis metus mollis urna consequat finibus. Nullam maximus tortor lectus, eget vehicula nisl varius quis. Vivamus ut nisi libero. Curabitur nulla odio, fringilla vitae lectus eleifend, tempus consectetur urna. Maecenas laoreet libero quis risus consectetur pretium. Phasellus tempor justo augue, nec tristique ante sollicitudin at. Aliquam dignissim diam nec erat cursus aliquet. Sed quis lorem non velit tristique dignissim. Nam sit amet leo interdum, dignissim orci nec, pellentesque justo. Vestibulum sed auctor mauris, at euismod lacus. Aenean maximus lobortis erat, id accumsan tellus pharetra sed.</div></li>
+							<li><div class='card'><h2>carte B</h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis metus mollis urna consequat finibus. Nullam maximus tortor lectus, eget vehicula nisl varius quis. Vivamus ut nisi libero. Curabitur nulla odio, fringilla vitae lectus eleifend, tempus consectetur urna. Maecenas laoreet libero quis risus consectetur pretium. Phasellus tempor justo augue, nec tristique ante sollicitudin at. Aliquam dignissim diam nec erat cursus aliquet. Sed quis lorem non velit tristique dignissim. Nam sit amet leo interdum, dignissim orci nec, pellentesque justo. Vestibulum sed auctor mauris, at euismod lacus. Aenean maximus lobortis erat, id accumsan tellus pharetra sed.</div></li>
+							<li><div class='card'><h2>carte C</h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis metus mollis urna consequat finibus. Nullam maximus tortor lectus, eget vehicula nisl varius quis. Vivamus ut nisi libero. Curabitur nulla odio, fringilla vitae lectus eleifend, tempus consectetur urna. Maecenas laoreet libero quis risus consectetur pretium. Phasellus tempor justo augue, nec tristique ante sollicitudin at. Aliquam dignissim diam nec erat cursus aliquet. Sed quis lorem non velit tristique dignissim. Nam sit amet leo interdum, dignissim orci nec, pellentesque justo. Vestibulum sed auctor mauris, at euismod lacus. Aenean maximus lobortis erat, id accumsan tellus pharetra sed.</div></li>
+						</ul>		
+					</li>
+					<li><div class='card'><h2>carte 6</h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis metus mollis urna consequat finibus. Nullam maximus tortor lectus, eget vehicula nisl varius quis. Vivamus ut nisi libero. Curabitur nulla odio, fringilla vitae lectus eleifend, tempus consectetur urna. Maecenas laoreet libero quis risus consectetur pretium. Phasellus tempor justo augue, nec tristique ante sollicitudin at. Aliquam dignissim diam nec erat cursus aliquet. Sed quis lorem non velit tristique dignissim. Nam sit amet leo interdum, dignissim orci nec, pellentesque justo. Vestibulum sed auctor mauris, at euismod lacus. Aenean maximus lobortis erat, id accumsan tellus pharetra sed.</div></li>
+					<li><div class='card'><h2>carte 7</h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis metus mollis urna consequat finibus. Nullam maximus tortor lectus, eget vehicula nisl varius quis. Vivamus ut nisi libero. Curabitur nulla odio, fringilla vitae lectus eleifend, tempus consectetur urna. Maecenas laoreet libero quis risus consectetur pretium. Phasellus tempor justo augue, nec tristique ante sollicitudin at. Aliquam dignissim diam nec erat cursus aliquet. Sed quis lorem non velit tristique dignissim. Nam sit amet leo interdum, dignissim orci nec, pellentesque justo. Vestibulum sed auctor mauris, at euismod lacus. Aenean maximus lobortis erat, id accumsan tellus pharetra sed.</div></li>
+					<li><div class='card'><h2>carte 8</h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis metus mollis urna consequat finibus. Nullam maximus tortor lectus, eget vehicula nisl varius quis. Vivamus ut nisi libero. Curabitur nulla odio, fringilla vitae lectus eleifend, tempus consectetur urna. Maecenas laoreet libero quis risus consectetur pretium. Phasellus tempor justo augue, nec tristique ante sollicitudin at. Aliquam dignissim diam nec erat cursus aliquet. Sed quis lorem non velit tristique dignissim. Nam sit amet leo interdum, dignissim orci nec, pellentesque justo. Vestibulum sed auctor mauris, at euismod lacus. Aenean maximus lobortis erat, id accumsan tellus pharetra sed.</div></li>
+					<li><div class='card'><h2>carte 9</h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis metus mollis urna consequat finibus. Nullam maximus tortor lectus, eget vehicula nisl varius quis. Vivamus ut nisi libero. Curabitur nulla odio, fringilla vitae lectus eleifend, tempus consectetur urna. Maecenas laoreet libero quis risus consectetur pretium. Phasellus tempor justo augue, nec tristique ante sollicitudin at. Aliquam dignissim diam nec erat cursus aliquet. Sed quis lorem non velit tristique dignissim. Nam sit amet leo interdum, dignissim orci nec, pellentesque justo. Vestibulum sed auctor mauris, at euismod lacus. Aenean maximus lobortis erat, id accumsan tellus pharetra sed.</div></li>
+					<li><div class='card'><h2>carte 10</h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis metus mollis urna consequat finibus. Nullam maximus tortor lectus, eget vehicula nisl varius quis. Vivamus ut nisi libero. Curabitur nulla odio, fringilla vitae lectus eleifend, tempus consectetur urna. Maecenas laoreet libero quis risus consectetur pretium. Phasellus tempor justo augue, nec tristique ante sollicitudin at. Aliquam dignissim diam nec erat cursus aliquet. Sed quis lorem non velit tristique dignissim. Nam sit amet leo interdum, dignissim orci nec, pellentesque justo. Vestibulum sed auctor mauris, at euismod lacus. Aenean maximus lobortis erat, id accumsan tellus pharetra sed.</div></li>
+				</ul>
+			</div>
+			<script src='code.js' type="text/javascript"></script>
+		</body>
+</html>

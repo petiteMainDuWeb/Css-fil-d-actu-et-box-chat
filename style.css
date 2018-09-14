@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=BioRhyme|Space+Mono');
+body{
+	background-color: #78909c;
+	background-size: cover;
+
+}
+h2{
+	font-size: 20px;
+	margin: 0;
+	font-family: 'BioRhyme', serif;  
+}
+.titre{
+	margin: 0 auto;
+	text-align: center; 
+	font-family: 'BioRhyme', serif; 
+	font-size: 30px;
+
+}
+.container{
+    margin:0 auto;
+}
+ul{
+	list-style-type: none;
+}
+.card{
+	background-color: #cfd8dc;
+	border: 2px solid #4b636e;
+	box-shadow: 5px 5px 2px #4b636e;
+	border-radius: 2%;
+	max-width: 500px;
+	max-height: 300px;
+	margin: 20px;
+	margin-left: 60px;
+	padding: 10px;
+	font-family: 'Space Mono', monospace;
+	font-size: 12px;
+	text-align: justify;
+
+}
+.feed{
+	display:flex;
+	flex-wrap: wrap;
+}
+@supports (not (display: contents)){
+	.feed li{
+		flex: 1 0 50%;
+	}
+	.feed li .nested{
+		flex-basis:100%;
+	}
+	.feed li .nested ul{
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+}
+@supports (display: contents){
+	.feed ul, .feed li{
+		display: contents;  /*mets tous les cards à la même taille*/
+	}
+	.card{
+		flex: 1 0 40%; /*redimensionne les cards*/
+	}
+}
+.chat{
+	background: #fff;
+	border: 6px solid #4b636e;
+	border-radius: 3%;
+	width: 300px;
+	bottom: 0;
+	position: fixed;
+	right: 25px;
+	z-index: 10;
+	font-size: 10px;
+}
+.messages{
+	border-bottom: 2px solid #4b636e;
+	overflow: auto; /*scroll*/
+	padding: 10px;
+	max-height: 25px;
+	transition: max-height 500ms;
+	/*overscroll-behavior-y: contain; à revoir pas compris*/
+
+}
+.message{
+	background: #4b636e;
+	border-radius: 5px;
+	color:#fff;
+	margin: 0 20% 10px 0;
+	padding: 10px;
+}
+.messages li:last-child .message{
+	margin-bottom: 0;
+}
+.input {
+	border: none;
+	display: block;
+	padding: 10px;
+	width: 200px;
+}
+.chat:focus-within  .messages{
+	max-height: 300px;
+}
+.chat:focus-within ~ .container{
+	filter: blur(2px);
+}
+.prompt{
+	line-height: 2em;
+	max-height: 0;
+	overflow: hidden;
+	text-align: right;
+	padding:0 10px;
+	transition: max-height 500ms;
+}
+.input:not(:placeholder-shown) + .prompt{
+	max-height: 2em;
+
+}
+
